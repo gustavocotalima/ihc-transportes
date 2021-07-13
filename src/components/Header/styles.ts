@@ -12,23 +12,26 @@ export const Content = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    a {
+        margin: 1rem;
+        text-decoration:none;
+        font-family: Roboto;
+        font-size: 2rem;
+        color: var(--text-gray);
+    }
+    
+
     div { 
         display: flex;
         justify-content: space-between;
-    }
-    a {
-        text-decoration:none;
-        margin: 1rem;
-        h1 {
-            font-family: Roboto;
-            font-size: 2rem;
-            color: var(--text-gray);
-        }
-        h2 {
+        a {
             font-family: Roboto;
             font-size: 1.1rem;
             color: var(--text-gray);
         }
     }
+
+    
+    
     
 `

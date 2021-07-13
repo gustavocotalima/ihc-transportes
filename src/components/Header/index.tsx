@@ -1,15 +1,16 @@
 
+import Link from 'next/link';
 import { Container, Content } from './styles';
 
 export function Header() {
     return (
         <Container>
             <Content>
-                <a href="/"><h1>IHC Transportes</h1></a>
+                <Link href="/"><a>IHC Transportes</a></Link>
                 <div>
-                    <a href="/"><h2>Home</h2></a>
-                    <a href="/simulador"><h2>Simulador</h2></a>
-                    <a href="/sobre"><h2>Sobre Nós</h2></a>
+                    <Link href="/"><a>Home</a></Link>
+                    <Link href="/simulador"><a>Simulador</a></Link>
+                    <Link href="/sobre"><a>Sobre Nós</a></Link>
                 </div>
             </Content>
         </Container>
