@@ -20,11 +20,8 @@ export const Container = styled.footer`
 
     a {
         text-decoration:none;
-        
-        h1 {
-            font-family: Roboto;
-            font-size: 2rem;
-            color: var(--text-gray);
-        }
+        font-family: Roboto;
+        font-size: 2rem;
+        color: var(--text-gray);
     }
 `
