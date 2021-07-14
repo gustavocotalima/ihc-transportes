@@ -1,9 +1,11 @@
+
+import Link from 'next/link';
 import { Container } from "./styles";
 
 export function Footer(){
     return(
         <Container>
-            <a href="/"><h1>IHC Transportes</h1></a>
+            <Link href="/"><a>IHC Transportes</a></Link>
             <p>Copyright 2021 © IHC Transportes</p>
         </Container>
     )

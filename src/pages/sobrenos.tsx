@@ -10,10 +10,7 @@ export default function SobreNos() {
   return (
       <>
         <Header/>
-        <PlansProvider>
-          <TicketSimulator />
-          <Plans/>
-        </PlansProvider>
+        <p>TESTE</p>
         <Footer/>
         <GlobalStyle/>
       </>
