@@ -1,5 +1,5 @@
 import { Header } from "../components/Header";
-import { TicketSimulator } from "../components/TicketSimulator";
+import { TicketPrice } from "../components/TicketPrice";
 import { Plans } from "../components/Plans";
 import { Footer } from "../components/Footer";
 import { GlobalStyle } from "../styles/global"
@@ -10,8 +10,8 @@ export default function Home() {
   return (
       <>
         <Header/>
+        <TicketPrice/>
         <PlansProvider>
-          <TicketSimulator />
           <Plans/>
         </PlansProvider>
         <Footer/>

@@ -31,6 +31,7 @@ export function TicketSimulator() {
     const [ticketNumber, setTicketNumber] = useState(0);
     const [normalTicketPrice, setNormalTicketPrice] = useState(0);
     const [IHCTicketPrice, setIHCTicketPrice] = useState(0);
+    const [simulated, setSimulated] = useState("false");
 
     function handleChangeOriginCity(newValue: number){
         setOriginCity(newValue);
@@ -75,6 +76,7 @@ export function TicketSimulator() {
                 setIHCTicketPrice((route.ticketPrice-(route.ticketPrice*planDiscount)) * ticketNumber);
             }
         });
+        setSimulated("true");
         
     }
 
@@ -132,7 +134,6 @@ export function TicketSimulator() {
                     valueLabelDisplay="auto"
                     onChange={handleChangeTicketNumber}
                     />
-                    
                     <Button
                         type="button" 
                         disabled={(originCity!==0)&&(destinationCity!==0)&&(plan!==0)&&(ticketNumber!==0)?false:true}
@@ -141,7 +142,8 @@ export function TicketSimulator() {
                             Calcular
                     </Button>
                 </form>
-                <ResultContainer>
+
+                <ResultContainer className={simulated}>
                      <div>
                         <header>
                             <p>Custo da passagem padrão</p>

@@ -19,7 +19,7 @@ export const Simulator = styled.div`
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    
+
     form {
         max-width: 600px;
         width: 100%;
@@ -44,7 +44,6 @@ export const Button = styled.button<ButtonProps>`
     padding: 0 2rem;
     border-radius: 0.25rem;
     height: 2.5rem;
-
     transition: filter 0.2s;
 
     &:hover {
@@ -101,9 +100,16 @@ export const ResultContainer = styled.div`
         max-width: 600px;
         width: 100%;
         padding: 0 1.25rem 1.25rem 1.25rem; 
-        display: grid;
         grid-template-columns: 1fr 1fr;  
         gap: 0.75rem; 
+
+        &.false {
+            display: none;
+        }
+
+        &.true {
+            display: grid;
+        }
 
         @media (max-width: 350px) {
             grid-template-columns: 1fr;

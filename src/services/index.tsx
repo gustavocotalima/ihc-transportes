@@ -2,27 +2,28 @@ import { createServer } from 'miragejs';
 
 createServer({
     routes() {
+      //this.urlPrefix = 'https://ihc-transportes.herokuapp.com/';
       this.namespace = 'api';
   
       this.get('/plan', () => {
         return [
           {
             id:1,
-            name:'IHC White',
+            name:'IHC+ White',
             description:'25% de Desconto',
             discount: 0.25,
             price: 100.0
           },
           {
             id:2,
-            name:'IHC Silver',
+            name:'IHC+ Silver',
             description:'50% de desconto',
             discount: 0.50,
             price: 300.0
           },
           {
             id:3,
-            name:'IHC Black',
+            name:'IHC+ Black',
             description:'100% de desconto',
             discount: 1.0,
             price: 500.0
