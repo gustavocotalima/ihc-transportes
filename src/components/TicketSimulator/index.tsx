@@ -126,10 +126,10 @@ export function TicketSimulator() {
                         ))}
                     </PlansContainer>
 
-                    <label>Número de viagens</label>
+                    <label>Número de viagens no mês:</label>
                     <Range
                     min={0}
-                    max={30}
+                    max={60}
                     value={ticketNumber}
                     valueLabelDisplay="auto"
                     onChange={handleChangeTicketNumber}
@@ -166,7 +166,8 @@ export function TicketSimulator() {
                             ).format(IHCTicketPrice)}
                         </h1>
                     </div>
-                </ResultContainer>
+                    <p>*Simulação não leva em conta a mensalidade do plano.</p>
+                </ResultContainer>     
             </Simulator>
         </Container>    
         

@@ -14,7 +14,7 @@ export const Content = styled.div`
     justify-content: space-between;
 
     a {
-        z-index: 1001;
+        z-index: 3;
         margin: 1rem;
         text-decoration:none;
         font-family: Roboto;
@@ -31,7 +31,7 @@ export const HeaderMenu = styled.div`
         color: var(--text-gray);
     }
     @media (max-width: 600px) {
-        z-index:1000;
+        z-index:2;
         background-color:  var(--orange);
         flex-flow: column nowrap;
         justify-content: unset;
@@ -62,6 +62,6 @@ export const Bars = styled(FaBars)`
     display: block;
     font-size: 2rem;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 3;
   }
 `

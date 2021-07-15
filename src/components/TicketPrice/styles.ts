@@ -18,6 +18,7 @@ export const Container = styled.div`
         
         border-collapse: collapse;
         width: 100%;
+        max-width: 100vw;
     }
 
     td, th {

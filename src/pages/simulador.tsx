@@ -1,5 +1,6 @@
 import { Header } from "../components/Header";
 import { TicketSimulator } from "../components/TicketSimulator";
+import { TicketPrice } from "../components/TicketPrice";
 import { Plans } from "../components/Plans";
 import { Footer } from "../components/Footer";
 import { GlobalStyle } from "../styles/global"
@@ -13,6 +14,7 @@ export default function Simulador() {
         <PlansProvider>
           <TicketSimulator />
           <Plans/>
+          <TicketPrice/>
         </PlansProvider>
         <Footer/>
         <GlobalStyle/>

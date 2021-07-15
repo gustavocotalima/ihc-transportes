@@ -134,5 +134,8 @@ export const ResultContainer = styled.div`
                 }
             }
         }
+        p{
+            grid-column: span 2
+        }
 `
 
