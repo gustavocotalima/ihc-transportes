@@ -8,8 +8,6 @@ interface PlanProps {
     discount: number;
 }
 
-PlanModal.setAppElement('#__next');
-
 export function PlanCard({name, description, price, discount}: PlanProps){
 
     const [isPlanModalOpen, setIsPlanModalOpen] = useState(false);
@@ -35,7 +33,7 @@ export function PlanCard({name, description, price, discount}: PlanProps){
             </div>
             
             <PlanModal isOpen={isPlanModalOpen} onRequestClose={handleClosePlanModal}>
-                <Close onClick={handleClosePlanModal}/>
+                <Close className="Close" onClick={handleClosePlanModal}/>
                 <h1>{name}</h1>
                 <p>Com o plano {name}, você tem {description} nas viagens da IHC Transportes. </p>
                 <p>

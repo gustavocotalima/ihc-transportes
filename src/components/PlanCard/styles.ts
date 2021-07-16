@@ -52,11 +52,10 @@ export const Container = styled.div`
     }
 `
 export const Close = styled(CloseIcon)`
-    color: var(--orange);
+    color: var(--text-gray);
     margin: 1rem;
     font-size: 2rem;
     cursor: pointer;
-  }
 `
 
 export const PlanModal = styled(Modal)`
@@ -67,7 +66,7 @@ export const PlanModal = styled(Modal)`
     position: center;
     border-radius: 0.25rem;
 
-    Close {
+    .Close {
         position: absolute;
         right: 1.5rem;
         top: 1.5rem;
