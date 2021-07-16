@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { AiOutlineClose as CloseIcon } from 'react-icons/ai';
-import Modal from 'react-modal';
+//import Modal from 'react-modal';
+import Dialog from '@material-ui/core/Dialog';
 
 export const Container = styled.div`
     background: var(--card-background);
@@ -52,20 +53,18 @@ export const Container = styled.div`
     }
 `
 export const Close = styled(CloseIcon)`
-    color: var(--text-gray);
     margin: 1rem;
     font-size: 2rem;
     cursor: pointer;
 `
 
-export const PlanModal = styled(Modal)`
-    width:100%;
-    max-width: 576px;
-    background: var(--orange);
-    padding: 3rem;
-    position: center;
-    border-radius: 0.25rem;
-
+export const PlanModal = styled(Dialog)`
+    div {
+        padding: 1.25rem;
+        align-items: center;
+    }
+    
+    //max-width: 600px;
     .Close {
         position: absolute;
         right: 1.5rem;
@@ -75,5 +74,4 @@ export const PlanModal = styled(Modal)`
             filter: brightness(0.8);
         }
     }
-
 `

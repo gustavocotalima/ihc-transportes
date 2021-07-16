@@ -14,7 +14,6 @@ export default function Simulador() {
         <PlansProvider>
           <TicketSimulator />
           <Plans/>
-          <TicketPrice/>
         </PlansProvider>
         <Footer/>
         <GlobalStyle/>

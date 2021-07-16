@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Container, PlanModal,Close } from "./styles";
+import { Container, PlanModal, Close } from "./styles";
+
 
 interface PlanProps {
     name: string;
@@ -32,13 +33,19 @@ export function PlanCard({name, description, price, discount}: PlanProps){
                 <button type="button" onClick={handleOpenPlanModal}>Confira</button>
             </div>
             
-            <PlanModal isOpen={isPlanModalOpen} onRequestClose={handleClosePlanModal}>
+            <PlanModal open={isPlanModalOpen} onClose={handleClosePlanModal}>
                 <Close className="Close" onClick={handleClosePlanModal}/>
-                <h1>{name}</h1>
+                <div> 
+                    <h1>{name}</h1>
+                </div>
+                <div> 
                 <p>Com o plano {name}, você tem {description} nas viagens da IHC Transportes. </p>
-                <p>
-                    {new Intl.NumberFormat('pt-BR', {style:'currency',currency: 'BRL'}).format(price)} /mês
-                </p>
+                </div>
+                <div> 
+                <h2>
+                    {new Intl.NumberFormat('pt-BR', {style:'currency',currency: 'BRL'}).format(price)}/mês
+                </h2>
+                </div>
 
 
             </PlanModal>
