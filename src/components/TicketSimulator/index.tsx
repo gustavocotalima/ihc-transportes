@@ -20,8 +20,8 @@ export function TicketSimulator() {
     const plans = useContext(PlansContext);
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/city').then(response => response.json()).then(data => setCities(data))
-        fetch('http://localhost:3000/api/route').then(response => response.json()).then(data => setRoutes(data))
+        fetch('/api/city').then(response => response.json()).then(data => setCities(data))
+        fetch('/api/route').then(response => response.json()).then(data => setRoutes(data))
     }, []);
 
     const [originCity, setOriginCity] = useState(0);
