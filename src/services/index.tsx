@@ -2,7 +2,7 @@ import { createServer } from 'miragejs';
 
 createServer({
     routes() {
-      //this.urlPrefix = 'https://ihc-transportes.herokuapp.com/';
+      this.urlPrefix = 'https://ihc-transportes.herokuapp.com/';
       this.namespace = 'api';
   
       this.get('/plan', () => {
