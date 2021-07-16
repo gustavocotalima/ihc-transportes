@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { AiOutlineClose as CloseIcon } from 'react-icons/ai';
-//import Modal from 'react-modal';
 import Dialog from '@material-ui/core/Dialog';
 
 export const Container = styled.div`
